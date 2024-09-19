@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LegalMix Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007bff', // A trust-inspiring blue
+                        accent: '#ffb703',  // Warm yellow for highlights
+                        bgLight: '#f8f9fa', // Light, clean background
+                        textDark: '#343a40', // Dark gray for legibility
+                        stepBg: '#e9ecef',   // Soft background for steps
+                        stepBorder: '#adb5bd' // Border color for step boxes
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'], // Modern sans-serif
+                        code: ['Fira Code', 'monospace'], // Monospace for technical feel
+                    }
+                }
+            }
+        }
+    </script>
+    <title>LegalMix - The Crypto Mixer for Good People</title>
 </head>
-<body>
-    <h1>Hello Good People!</h1>
+
+<body class="bg-bgLight text-textDark font-sans leading-relaxed">
+    <div class="max-w-6xl mx-auto p-8">
+        <!-- Header Section -->
+        <header class="text-center pt-16">
+            <h1 class="text-5xl font-bold text-primary">LegalMix - The Crypto Mixer for Good People</h1>
+        </header>
+
+        <!-- USP Section with Gradient Background -->
+        <section
+            class="my-20 py-16 text-center bg-gradient-to-r from-primary to-accent rounded-lg shadow-xl text-white relative">
+            <h2 class="text-4xl font-semibold">The First Legal Crypto Mixer — Without the Bad Stuff</h2>
+            <p class="mt-6 text-xl">Zero-Knowledge KYC Verification | Non-Custodial | No Blacklisting</p>
+            <!-- Decorative Vector or Image -->
+            <div class="absolute bottom-0 right-0 w-32 h-32 bg-white opacity-20 transform rotate-45"></div>
+                        <button
+                            class="mt-8 bg-accent text-black px-6 py-3 rounded-full text-xl font-semibold shadow-lg hover:bg-yellow-500 transition">
+                            Launch App
+                        </button>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="mt-16 text-center">
+            <h2 class="text-4xl font-semibold">Keep it clean, keep it private</h2>
+            <p class="text-xl mt-6">Privacy is not only for criminals</p>
+        </section>
+
+        <section class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-3xl font-semibold text-primary">On-chain privacy should be a right</h3>
+                <p class="mt-6">Current options are flawed:</p>
+                <ul class="list-disc list-inside mt-4 space-y-3">
+                    <li>Non-custodial mixers allow <strong class="text-accent">criminal funds</strong> to be laundered
+                        alongside legitimate assets.</li>
+                    <li>Off-chain custodial services (CEXs) require trust and <strong class="text-accent">compromise
+                            privacy</strong>.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-lg">TornadoCash, a decentralized mixer, was sanctioned by the U.S. Treasury in 2022 for
+                    allegedly laundering over $7 billion in cryptocurrency, including funds stolen by North Korean
+                    hackers.</p>
+                <p class="mt-6">Imagine your address being blacklisted just because you wanted more privacy.</p>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="mt-20 text-center">
+            <h3 class="text-4xl font-semibold">How It Works</h3>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-stepBg border border-stepBorder rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold mb-4 text-primary">Step 1</h4>
+                    <p>Complete a Zero-Knowledge KYC verification off-chain.</p>
+                </div>
+                <div class="p-6 bg-stepBg border border-stepBorder rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold mb-4 text-primary">Step 2</h4>
+                    <p>Deposit your funds into the mixer.</p>
+                </div>
+                <div class="p-6 bg-stepBg border border-stepBorder rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold mb-4 text-primary">Step 3</h4>
+                    <p>Mix with funds from other zkKYC-verified users.</p>
+                </div>
+                <div class="p-6 bg-stepBg border border-stepBorder rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold mb-4 text-primary">Step 4</h4>
+                    <p>Withdraw your funds without ever compromising privacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use Section -->
+        <section class="mt-20">
+            <h3 class="text-4xl font-semibold text-center">Why would I use this if I’m not a pirate?</h3>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <ul class="list-disc list-inside space-y-4 text-left">
+                    <li><strong class="text-accent">Institutional investor</strong>: Keep your competitors from seeing
+                        your moves without interacting with sanctioned dApps.</li>
+                    <li><strong class="text-accent">Crypto Power-User</strong>: Own a lot of crypto assets and want
+                        on-chain privacy.</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-4 text-left">
+                    <li><strong class="text-accent">Income in crypto</strong>: Avoid coworkers knowing how much you're
+                        paid and what you spend it on.</li>
+                    <li><strong class="text-accent">Public figures</strong>: Keep your financial transactions private
+                        when all eyes are on you.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="mt-20 text-center">
+            <h3 class="text-4xl font-semibold">Ready for privacy?</h3>
+            <button
+                class="mt-8 bg-accent text-black px-6 py-3 rounded-full text-xl font-semibold shadow-lg hover:bg-yellow-500 transition">
+                Launch App
+            </button>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mt-20">
+            <h3 class="text-4xl font-semibold text-center">FAQ</h3>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <ul class="space-y-4">
+                    <li><strong>Why can't I perform the KYC for someone else?</strong> You can't trace back transactions
+                        anyway.</li>
+                    <li><strong>How is it different from TornadoCash?</strong></li>
+                    <li><strong>How do you prevent money laundering?</strong></li>
+                </ul>
+                <ul class="space-y-4">
+                    <li><strong>What is zkKYC?</strong></li>
+                    <li><strong>How are you different from a centralized exchange?</strong></li>
+                    <li><strong>Can my identity be revealed if required by law?</strong></li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
