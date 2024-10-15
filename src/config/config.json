@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "LegalMix",
-    "base_url": "https://legalmix.github.io/",
+    "base_url": "https://legalmix.github.io",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
