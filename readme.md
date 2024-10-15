@@ -33,6 +33,15 @@ npm run dev
 npm run build
 ```
 
+### 👉 Publish to GitHub Pages
+
+- Make sure the `base_url` is correct in config.json
+- Run `npm run build`
+- Rename `dist` to `docs`
+- Add a `.nojekyll` to `docs`
+- Make sure GitHub Pages is configured to use that folder
+- Push to repo
+
 ### 👉 Build and Run With Docker
 
 ```bash
