@@ -3,6 +3,7 @@
     "title": "LegalMix",
     "base_url": "https://legalmix.github.io",
     "base_path": "/",
+    "out_dir": "./docs",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",

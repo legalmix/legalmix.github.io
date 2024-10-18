@@ -37,10 +37,10 @@ npm run build
 
 - Make sure the `base_url` is correct in config.json
 - Run `npm run build`
-- Rename `dist` to `docs`
-- Add a `.nojekyll` to `docs`
-- Make sure GitHub Pages is configured to use that folder
+- Make sure GitHub Pages is configured to use the `docs` folder
 - Push to repo
+
+Hint: the `.nojekyll` file has been added to `public` because it's needed in the `docs` folder for GitHub to bypass the Jekyll compilation.
 
 ### 👉 Build and Run With Docker
 
