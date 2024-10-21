@@ -35,12 +35,10 @@ npm run build
 
 ### 👉 Publish to GitHub Pages
 
-- Make sure the `base_url` is correct in config.json
-- Run `npm run build`
-- Make sure GitHub Pages is configured to use the `docs` folder
-- Push to repo
+- In the repository, under `Settings > Pages`, make sure to select `GitHub Actions` under `Build and deployment > Source`.
+- You can then run the workflow manually on the default branch.
 
-Hint: the `.nojekyll` file has been added to `public` because it's needed in the `docs` folder for GitHub to bypass the Jekyll compilation.
+It will create a new environment called `github-pages`, in which the deployment will run.
 
 ### 👉 Build and Run With Docker
 

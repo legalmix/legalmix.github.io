@@ -22,7 +22,6 @@ const filteredSupportedLang = supportedLang.filter(
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
-  outDir: config.site.out_dir ? config.site.out_dir : "./dist",
   trailingSlash: config.site.trailing_slash ? "always" : "ignore",
   i18n: {
     locales: filteredSupportedLang,
